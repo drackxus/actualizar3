@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Aplicación con Autoupdate</title>
+</head>
+<body>
+  <h1>Aplicación con Autoupdate</h1>
+  <p>Versión actual: <span id="version"></span></p>
+
+  <script>
+    // Mostrar la versión actual en el elemento con el ID "version"
+    document.getElementById('version').innerText = require('electron').remote.app.getVersion();
+  </script>
+</body>
+</html>

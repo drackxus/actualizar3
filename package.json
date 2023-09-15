@@ -1,0 +1,33 @@
+{
+  "name": "mi-aplicacion",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.6.4",
+    "electron": "^26.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drackxus/actualizar3.git"
+  },
+  "build": {
+    "appId": "com.example.app",
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}
